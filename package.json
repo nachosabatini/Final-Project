@@ -11,7 +11,7 @@
     "build:clean": "rimraf .next",
     "build:ui": "npx next build",
     "build:server": "npx tsc --project tsconfig.server.json && npx babel .next/production-server -d .next/production-server --extensions \".js\"",
-    "build": "build:ui && build:server",
+    "build": "npm run build:ui && npm run build:server",
     "start": "cross-env NODE_ENV=production node .next/production-server/src/server/main.js",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start:dev": "nest start --watch",
