@@ -1,6 +1,5 @@
 ## Description
 
-Final project for my degree in System analyst
 
 ## Installation
 
